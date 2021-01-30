@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="11235" started-at="2021-01-30T16:18:08 NZDT" finished-at="2021-01-30T16:18:19 NZDT">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.Runner@4923ab24]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="11235" started-at="2021-01-30T16:18:08 NZDT" finished-at="2021-01-30T16:18:19 NZDT">
+      <class name="testRunner.Runner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunner.Runner@4923ab24]" name="setUpClass" is-config="true" duration-ms="624" started-at="2021-01-30T16:18:08 NZDT" finished-at="2021-01-30T16:18:08 NZDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.Runner@4923ab24]" name="runScenario" duration-ms="10362" started-at="2021-01-30T16:18:08 NZDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-01-30T16:18:19 NZDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Success Login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login features]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Sign In123] but found [Sign In]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Sign In123] but found [Sign In]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at pages.LoginPage.verifyHomepage(LoginPage.java:38)
+at stepDef.LoginStepDef.i_am_on_the_home_page(LoginStepDef.java:32)
+at ✽.I am on the Home Page(file:///C:/Users/padma/eclipse-workspace/TestProject/src/test/resources/features/Login.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunner.Runner@4923ab24]" name="tearDownClass" is-config="true" duration-ms="200" started-at="2021-01-30T16:18:19 NZDT" finished-at="2021-01-30T16:18:19 NZDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunner.Runner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
